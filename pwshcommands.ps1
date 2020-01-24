@@ -20,4 +20,9 @@ for i in {1..20} ;
     #listing specific colums on output in table format---
 
     docker container ls --format "table {{.Names}}\t{{.Ports}}"
+
+# to stop and remove all containers the neat way!
+
+docker stop $(docker ps -aq)
+docker rm -f  $(docker ps -aq)
    
