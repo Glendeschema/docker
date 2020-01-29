@@ -20,3 +20,9 @@ docker rm -f  $(docker ps -aq)
 #Then you can create your index.html and put it inside the html folder.
 #Use the above code to automate the creation of multiple containers
 docker run -d --name webapp7 -p 8086:80 --volume /Users/glen/Desktop/Demo01:/usr/share/nginx/html  nginx
+
+#creating docker enviroment using docker compose YAML 
+
+docker-compose up  --scale web=10 -d # web=10 is number of containers
+
+#note the port : 8080-8085:80 range so that containers wont conflict ports
