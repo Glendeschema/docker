@@ -30,7 +30,7 @@ jobs:
             echo `kubectl create namespace schemakube7ff8`
         fi
 
-    - uses: azure/k8s-create-secret
+    - uses: azure/k8s-create-secret@v1
       with:
         namespace: schemakube7ff8
         container-registry-url: schemakube.azurecr.io
@@ -38,7 +38,7 @@ jobs:
         container-registry-password: ${{ secrets.acr_schemakube_password }}
         secret-name: schemakubedockerauth
        
-    - uses: azure/k8s-deploy
+    - uses: azure/k8s-deploy@v1
       with:
         namespace: schemakube7ff8
         manifests: |
