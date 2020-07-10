@@ -9,9 +9,10 @@ spec:
       labels:
         app: "schemakube-4b8d"
   selector:
-        app  : "schemakube-4b8d"
-        name : "schemakube-4b8d"
-    spec:
+    app: "schemakube-4b8d"
+    name: "schemakube-4b8d"
+    
+ spec:
       containers:
         - name: "schemakube-4b8d"
           image: "schemakube.azurecr.io/schemakube"
