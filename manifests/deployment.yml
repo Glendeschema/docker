@@ -11,9 +11,9 @@ spec:
   selector:
         app: "schemakube-4b8d"
         name : "schemakube-4b8d"
-    spec:
-      containers:
-        - name: "schemakube-4b8d"
-          image: "schemakube.azurecr.io/schemakube"
-          ports:
+  spec:
+    containers:
+      - name: "schemakube-4b8d"
+        image: "schemakube.azurecr.io/schemakube"
+        ports:
           - containerPort: 80 
