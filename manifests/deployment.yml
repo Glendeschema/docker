@@ -11,7 +11,7 @@ spec:
   selector:
       app: "schemakube-4b8d"
       name: "schemakube-4b8d"
- spec:
+spec:
     containers:
       - name: "schemakube-4b8d"
         image: "schemakube.azurecr.io/schemakube"
