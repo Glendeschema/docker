@@ -3,6 +3,11 @@ kind: Deployment
 metadata:
   name: "schemakube-4b8d"
 spec:
+  containers:
+      - name: "schemakube-4b8d"
+        image: "schemakube.azurecr.io/schemakube"
+        ports:
+          - containerPort: 80 
   replicas: 2
   template:
     metadata:
@@ -11,9 +16,3 @@ spec:
   selector:
       app: "schemakube-4b8d"
       name: "schemakube-4b8d"
-spec:
-    containers:
-      - name: "schemakube-4b8d"
-        image: "schemakube.azurecr.io/schemakube"
-        ports:
-          - containerPort: 80 
