@@ -8,6 +8,9 @@ spec:
     metadata:
       labels:
         app: "schemakube-4b8d"
+  selector:
+        app  : "schemakube-4b8d"
+        name : "schemakube-4b8d"
     spec:
       containers:
         - name: "schemakube-4b8d"
@@ -15,6 +18,4 @@ spec:
           ports:
           - containerPort: 80
           
-      selector:
-        app  : "schemakube-4b8d"
-        name : "schemakube-4b8d"
+ 
