@@ -1,4 +1,4 @@
-apiVersion : apps/v1
+apiVersion : apps/v1beta1
 kind: Deployment
 metadata:
   name: "schemakube-4b8d"
@@ -8,15 +8,10 @@ spec:
     metadata:
       labels:
         app: "schemakube-4b8d"
-  selector:
-    app: "schemakube-4b8d"
-    name: "schemakube-4b8d"
-    
- spec:
+   
+    spec:
       containers:
         - name: "schemakube-4b8d"
           image: "schemakube.azurecr.io/schemakube"
           ports:
-          - containerPort: 80
-          
- 
+          - containerPort: 80 
