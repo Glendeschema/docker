@@ -12,5 +12,5 @@ spec:
       protocol: TCP
       name: http
     selector:
-        app: app: "schemakube-4b8d"
-        name : app: "schemakube-4b8d"
+        app: : "schemakube-4b8d"
+        name : "schemakube-4b8d"
